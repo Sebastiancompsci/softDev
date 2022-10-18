@@ -24,16 +24,27 @@ for i in krewes_list:
     if len(i) != 0: #ignore last item
         tmp = i.split('$$$') #split each item into [period, devo, ducky]
         period = (int) (tmp[0]) #period always first item in list
-        devo = (tmp[1], tmp[2]) #devo and duck in a tuple. Always 2nd and 3rd item 
+        devo_duck_pair = (tmp[1], tmp[2]) #devo and duck in a tuple. Always 2nd and 3rd item 
         if period not in krewes:
-            krewes[period] = [devo]
+            krewes[period] = [devo_duck_pair] #list with tuple in it
         else:
-            krewes[period].append(devo)
+            krewes[period].append(devo_duck_pair)
 
-def print_devo(d):
+#prints random devo name, period, and ducky, but also returns devo + duck tuple 
+def choose_devo(d):
     period = random.choice(list(d)) #random period
-    devo = random.choice(d[period]) #ranom devo + ducky
-    print('period ' + (str) (period) + ', devo ' + devo[0] + ', ducky ' + devo[1])
+    devo_duck_pair = select_devo_period(period, d) #random devo + ducky
+    return'period ' + (str) (period) + ', devo ' + devo_duck_pair[0] + ', ducky ' + devo_duck_pair[1]
 
-print_devo(krewes)
+# select_devo_period goes through a specific period and finds a random devo
+def select_devo_period(period, d):
+    if period in list(d):
+        return random.choice(d[period])
+    return None
+
+
+
+
+print(choose_devo(krewes))
+
 
