@@ -1,0 +1,47 @@
+h1 {
+    color: white
+}
+
+html {
+    background-color: rgb(105,105,105);
+}
+
+h3 {
+    color: white
+}
+.heading1 {
+    text-align: center;
+    background: rgb(200,200,200);
+    color: white;
+    font-size: 35px;
+}
+
+.mainfoo {
+    font-size: 25px;
+}
+
+.main {
+    background: rgb(135,135,135);
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    text-align: left;
+}
+
+.lorem {
+    padding-left: 100px;
+}
+
+.foot {
+    color: rgb(200,200,200);
+    background: rgb(90,90,90);
+    text-align: right
+}
+
+.container {
+    display: flex
+    flex-direction: column;
+    margin: auto
+}
