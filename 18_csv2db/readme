@@ -1,0 +1,16 @@
+from csv import DictReader
+from importlib.metadata import files
+
+
+SJS: Shinji, Jeremy and Sebastian
+SoftDev  
+K18 -- SQLite in Python
+2022-10-26
+
+DISCO:
+* Using DictReader() to get data from .csv files
+* use fetch functions instead of SELECT to get from tables
+
+QCC:
+* How can we make a general database builder that will work with any .csv file?
+* How can we avoid having to delete the .db each time?
