@@ -1,8 +1,10 @@
-# Double S: Sebastian ching, Selena Ho
-# SoftDev
-# K20 -- NASA API Key
-# 2022-11-22
-# time spent: 0.5
+'''
+Double S: Sebastian Ching, Selena Ho
+SoftDev
+K20 -- NASA API Key
+2022-11-22
+time spent: 0.5
+'''
 
 from flask import Flask, render_template
 import requests
