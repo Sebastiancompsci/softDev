@@ -21,4 +21,5 @@ DoubleS: Selena Ho, Sebastian Ching
 #### q0b:
 1. https://get.foundation/sites/docs/xy-grid.html
 2. https://get.foundation/sites/docs/grid.html 
-#### q1
+#### q1:
+We prefer bootstrap because we believe it's a little easier to use, as well as read/apply to a website. In our experience, we also think that foundation has a little too many pre-requisites for organizing and styling. 
