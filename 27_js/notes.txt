@@ -1,0 +1,19 @@
+Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon
+SoftDev pd0
+K27 -- Basic functions in JavaScript
+2023-04-03t
+
+DISCO
+-----------------------------------------------------------------
+* In scheme we use define, In javascript we use function
+* No Lambda In javascript
+* Prefix notation In scheme, none In javascript
+* In javascript use brackets, scheme use parentheses
+* Return In javascript, none In scheme
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* Is there an algorithm to convert between scheme And Javascript?
+* What are the advantages of using scheme over javascript Or vice versa?
+=================================================================
