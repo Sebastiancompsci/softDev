@@ -77,6 +77,7 @@ var stripe = function() {
 // FAC
 // GCD
 
+
 var fib = function(n) {
 if (n < 2) {
     return n;
@@ -98,8 +99,27 @@ var gcd = function(a,b){
   return gcd (b, a % b);
 }
 
+var button = document.getElementById("myBtn"); 
+button.addEventListener("click", callfib);  
+function callfib(){
+var addfib = document.getElementById("fibn").value;
+console.log(fib(addfib));
+}
 
+var button = document.getElementById("Fac"); 
+button.addEventListener("click", callfac);  
+function callfac(){
+var addfac = document.getElementById("fibn").value;
+console.log(fac(addfac));
+}
 
+var button = document.getElementById("Gcd"); 
+button.addEventListener("click", callGcd);  
+function callGcd(){
+var addGcd = document.getElementById("fibn").value;
+var addGcd2 = document.getElementById("fib2").value;
+console.log(gcd(addGcd, addGcd2));
+}
 
 // In addition to the style shown above,
 //  you are encouraged to test drive the "arrow function syntax" as shown below.
@@ -108,3 +128,4 @@ const myFxn = (param1, param2) => {
   // body
   return retVal;
 };
+
