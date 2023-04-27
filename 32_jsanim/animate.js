@@ -21,13 +21,31 @@ var dvdLogoSetup =  function() {
     var rectHeight = 400;
 
     var rectX = Math.random(c.width-rectWidth);
-    var rectY = Math.random(c.height- rectheight);
+    var rectY = Math.random(c.height- rectHeight);
 
     var xVel = 10 * Math.cos(Math.random() *2 * MathPI);
     var yVel = 10 * Math.sin(Math.random() *2 * MathPI);
 
     var logo = new Image();
     logo.src = "logo_dvd.jpg";
+
+
+var dvdLogo =  function() {
+    ctx.clearRect(0, 0, c.width, c.height);
+    ctx.fillRect(rectX, rectY, rectWidth, rectHeight);
+    ctx.drawImage(logo, rectX, rectY, rectWidth, rectHeight);
+
+    if(rectX > c.width-rectWidth){
+        xVel = -10 * Math.cos(Math.random() *2 * MathPI);
+    }
+    if(rectY > c.height-rectHeight){
+        yVel = -10 * Math.sin(Math.random() *2 * MathPI);
+    }
+    rectX = rectX + xVel;
+    rectY = rectY + yVel;
+    requestID = window.requestAnimationFrame(dvdLogoSetup);
+    }
+dvdLogo();
 }
 
 var radius = 0;
@@ -70,4 +88,5 @@ var stopIt = () => {
 }
 
 dotButton.addEventListener("click",drawDot);
+dvdButton.addEventListener("click", dvdLogoSetup);
 stopButton.addEventListener("click", stopIt);
