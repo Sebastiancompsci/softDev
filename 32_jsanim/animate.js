@@ -43,7 +43,7 @@ var dvdLogo =  function() {
     }
     rectX = rectX + xVel;
     rectY = rectY + yVel;
-    requestID = window.requestAnimationFrame(dvdLogoSetup);
+    requestID = window.requestAnimationFrame(dvdLogo);
     }
 dvdLogo();
 }
